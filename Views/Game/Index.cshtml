@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "Play War";
+}
+
+<div class="container-fluid header">
+    <div class="row title">
+        <div class="col">
+            <h1 class="war-title">WAR</h1>
+        </div>
+    </div>
+</div>
+
+<!--♣ ♦ ♥ ♠-->
+<div class="container-fluid game-board">
+    <div class="row cards">
+        <div class="col-sm-12 col-md-4 player-card">
+            <h1 class="player-card-val">-</h1>
+        </div>
+        <div class="col-sm-12 col-md-4 indicator">
+            <h1 class="indicator-val"><i class="fas fa-times"></i></h1>
+        </div>
+        <div class="col-sm-12 col-md-4 opponent-card">
+            <h1 class="opponent-card-val">-</h1>
+        </div>
+    </div>
+
+    <div class="row information">
+        <div class="col-4 player-deck">
+            <h3 class="player-cards-left">
+            </h3>
+        </div>
+        <div class="col-4 turn-info">
+            <h3 class="num-turns">
+            </h3>
+        </div>
+        <div class="col-4 opponent-deck">
+            <h3 class="opponent-cards-left">
+            </h3>
+        </div>
+    </div>
+
+    <div class="row turn-result">
+        <div class="col">
+            <h3 class="turn-result-val">
+            </h3>
+        </div>
+    </div>
+
+    <div class="row next-button">
+        <div class="col next">
+            <button type="button" class="btn btn-secondary btn-next">NEW GAME</button>
+        </div>
+    </div>
+
+    <div class="row save-exit-buttons">
+        <div class="col save-exit">
+            <button type="button" class="btn btn-success btn-save">SAVE GAME</button>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-danger btn-exit">EXIT GAME</a>
+        </div>
+    </div>
+
+    <div class="row simulate">
+        <div class="col">
+            <button type="button" class="btn btn-secondary btn-sim">SIM TO END</button>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/game.js" async defer></script>
+
+
+@section Scripts
+{
+    <link rel="stylesheet" href="~/css/game.css" />
+}
+

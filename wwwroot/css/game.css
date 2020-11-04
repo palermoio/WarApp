@@ -1,0 +1,63 @@
+﻿body {
+    text-align: center;
+}
+
+.header {
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.war-title {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+}
+
+.cards {
+    padding-bottom: 5%;
+    font-family: 'Merriweather', serif;
+}
+
+.player-card-val {
+    color: red;
+    font-size: 4rem;
+}
+
+.opponent-card-val {
+    color: red;
+    font-size: 4rem;
+}
+
+.indicator {
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    .player-card-val {
+        padding-bottom: 5%;
+    }
+
+    .opponent-card-val {
+        padding-top: 5%;
+    }
+}
+
+.information {
+    padding-bottom: 3%;
+}
+
+.turn-result {
+    padding-bottom: 3%;
+}
+
+.next-button {
+    padding-bottom: 2%;
+}
+
+.save-exit-buttons {
+    padding-bottom: 2%;
+}
+
+.btn-sim {
+    display: none;
+}

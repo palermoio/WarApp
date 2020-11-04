@@ -1,0 +1,46 @@
+﻿@model WarApp.Models.User
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="container-fluid dash">
+
+    <div class="row dash-head">
+        <div class="col">
+            <h1 class="dash-title">User Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="row welcome">
+        <div class="col">
+                    <h4>Welcome, @Html.DisplayFor(model => model.userName)!</h4>
+        </div>
+    </div>
+
+    <div class="row buttons">
+        <div class="col game-record-btns">
+            <a asp-area="" asp-controller="Game" asp-action="Index" class="btn btn-secondary btn-new-game">New Game</a>
+            <a asp-area="" asp-controller="Grid" asp-action="Index" class="btn btn-success btn-records">View Records</a>
+        </div>
+    </div>
+
+    <div class="row stats-saves">
+        <div class="col stats">
+            <h3>Stats</h3>
+            <ul class="list-group stat-list">
+                <li class="list-group-item list-games-played">Games played: @Html.DisplayFor(model => model.gamesPlayed)</li>
+                <li class="list-group-item list-games-won">Games won: @Html.DisplayFor(model => model.gamesWon)</li>
+                <li class="list-group-item list-games-lost">Games lost: @Html.DisplayFor(model => model.gamesLost)</li>
+                <li class="list-group-item list-total-moves">Total moves: @Html.DisplayFor(model => model.totalMoves)</li>
+                <li class="list-group-item list-war-declared">Times war declared: @Html.DisplayFor(model => model.timesWar)</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts
+{
+    <link rel="stylesheet" href="~/css/dashboard.css" />
+}

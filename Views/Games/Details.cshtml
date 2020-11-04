@@ -1,0 +1,54 @@
+﻿@model WarApp.Models.Game
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.user_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.user_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.numMoves)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.numMoves)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.timesWar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.timesWar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gameOver)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gameOver)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.savedGame)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.savedGame)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.saveState)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.saveState)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

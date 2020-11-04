@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Grid";
+}
+
+<div class="container-fluid grid">
+    <div class="row grid-title">
+        <div class="col">
+            <h1>Games Grid</h1>
+        </div>
+    </div>
+
+    <div class="row new-game">
+        <div class="col">
+            <a asp-area="" asp-controller="Game" asp-action="Index" class="btn btn-secondary btn-new-game">New Game</a>
+        </div>
+    </div>
+
+    <div class="row games-played-saved">
+        <div class="col-sm-12 col-md-6 saved-games">
+            <h3>Saved Games</h3>
+        </div>
+        <div class="col-sm-12 col-md-6 played-games">
+            <h3>Record of Games</h3>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <link rel="stylesheet" href="~/css/grid.css" />
+}

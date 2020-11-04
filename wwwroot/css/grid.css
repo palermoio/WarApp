@@ -1,0 +1,24 @@
+﻿.grid {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.grid-title {
+    font-family: 'Merriweather', serif;
+    padding-bottom: 2%;
+}
+
+.new-game {
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+.games-played-saved {
+    font-family: 'Merriweather', serif;
+}
+
+@media(max-width: 767px) {
+    .saved-games {
+        padding-bottom: 4%;
+    }
+}
